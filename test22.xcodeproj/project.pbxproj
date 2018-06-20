@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B010E2B20DA597F0009FFD6 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 1B010E2920DA597F0009FFD6 /* Appfile */; };
+		1B010E2C20DA597F0009FFD6 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 1B010E2A20DA597F0009FFD6 /* Fastfile */; };
 		1B8109CD20DA3E53009FCFEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8109CC20DA3E53009FCFEC /* AppDelegate.swift */; };
 		1B8109CF20DA3E53009FCFEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8109CE20DA3E53009FCFEC /* ViewController.swift */; };
 		1B8109D220DA3E53009FCFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8109D020DA3E53009FCFEC /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B010E2920DA597F0009FFD6 /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Appfile; path = fastlane/Appfile; sourceTree = SOURCE_ROOT; };
+		1B010E2A20DA597F0009FFD6 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
 		1B8109C920DA3E53009FCFEC /* test22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8109CC20DA3E53009FCFEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B8109CE20DA3E53009FCFEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		1B8109CB20DA3E53009FCFEC /* test22 */ = {
 			isa = PBXGroup;
 			children = (
+				1B010E2920DA597F0009FFD6 /* Appfile */,
+				1B010E2A20DA597F0009FFD6 /* Fastfile */,
 				1B8109CC20DA3E53009FCFEC /* AppDelegate.swift */,
 				1B8109CE20DA3E53009FCFEC /* ViewController.swift */,
 				1B8109D020DA3E53009FCFEC /* Main.storyboard */,
@@ -96,7 +102,7 @@
 				TargetAttributes = {
 					1B8109C820DA3E52009FCFEC = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -123,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B010E2C20DA597F0009FFD6 /* Fastfile in Resources */,
+				1B010E2B20DA597F0009FFD6 /* Appfile in Resources */,
 				1B8109D720DA3E53009FCFEC /* LaunchScreen.storyboard in Resources */,
 				1B8109D420DA3E53009FCFEC /* Assets.xcassets in Resources */,
 				1B8109D220DA3E53009FCFEC /* Main.storyboard in Resources */,
@@ -192,7 +200,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Carey International, Inc.";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -214,6 +222,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -249,7 +258,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Carey International, Inc.";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -264,6 +273,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -274,12 +284,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J9LK9AXH7;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Carey International, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Carey International, Inc.";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N6L8987864;
 				INFOPLIST_FILE = test22/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = parijatchandra.test22;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carey.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c92b821-9317-41d6-8330-c853abb0c0f1";
+				PROVISIONING_PROFILE_SPECIFIER = Demo;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +304,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J9LK9AXH7;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Carey International, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Carey International, Inc.";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N6L8987864;
 				INFOPLIST_FILE = test22/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = parijatchandra.test22;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carey.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c92b821-9317-41d6-8330-c853abb0c0f1";
+				PROVISIONING_PROFILE_SPECIFIER = Demo;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
